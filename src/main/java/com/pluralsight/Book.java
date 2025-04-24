@@ -8,12 +8,12 @@ private String title;
 private boolean isCheckedOut;
 private String checkedOutTo;
 
-    public Book(String checkedOutTo, boolean isCheckedOut, String title, String isbn, String id) {
-        this.checkedOutTo = checkedOutTo;
-        this.isCheckedOut = isCheckedOut;
-        this.title = title;
-        this.isbn = isbn;
+    public Book(boolean isCheckedOut, String checkedOutTo, String id, String isbn, String title) {
         this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+        this.isCheckedOut = isCheckedOut;
+        this.checkedOutTo = checkedOutTo;
     }
 
     public String getId() {
@@ -55,4 +55,9 @@ private String checkedOutTo;
     public void setCheckedOutTo(String checkedOutTo) {
         this.checkedOutTo = checkedOutTo;
     }
-}
+
+
+    }
+
+
+
